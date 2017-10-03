@@ -2,7 +2,7 @@ angular.module('app').controller('mainCtrl', ($scope) => {
    
 $scope.makeEmployee = (id) => {
     $scope.newEmployees.map((item, index, arr) => {
-        if(id === item.id) {
+        if(id === item.ssn) {
             $scope.employees.push(item)
            arr.splice(index, 1)
         }
@@ -11,7 +11,7 @@ $scope.makeEmployee = (id) => {
 
 $scope.terminateEmployee = (id) => {
     $scope.employees.map((item, index, arr) => {
-        if(id === item.id) {
+        if(id === item.ssn) {
             $scope.terminatedEmployees.push(item)
             arr.splice(index, 1)
         }
@@ -20,7 +20,7 @@ $scope.terminateEmployee = (id) => {
 
 $scope.rehireEmployee = (id) => {
     $scope.terminatedEmployees.map((item, index, arr) => {
-        if(id === item.id) {
+        if(id === item.ssn) {
             $scope.newEmployees.push(item)
             arr.splice(index, 1)
         }
@@ -28,8 +28,9 @@ $scope.rehireEmployee = (id) => {
 }
 
 $scope.addNewHire = (newHire) => {
-    console.log(newHire) 
-    $scope.newEmployees.push(newHire)
+    if(newHire) {
+        $scope.newEmployees.push(newHire)
+    }
 }
 
 

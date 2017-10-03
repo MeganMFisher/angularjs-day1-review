@@ -58,7 +58,7 @@
                 <p>JOB TITLE: {{employee.job_title}}</p>
                 <p>EMAIL: {{employee.email}}</p>
                 <p>SSN: {{employee.ssn}}</p>
-                <button ng-click='makeEmployee(employee.id)'>Training Completed</button>
+                <button ng-click='makeEmployee(employee.ssn)'>Training Completed</button>
             </div>
 
         </div>
@@ -73,7 +73,7 @@
                 <p>JOB TITLE: {{employee.job_title}}</p>
                 <p>EMAIL: {{employee.email}}</p>
                 <p>SSN: {{employee.ssn}}</p>
-                <button ng-click='terminateEmployee(employee.id)'>Terminate Employee</button>
+                <button ng-click='terminateEmployee(employee.ssn)'>Terminate Employee</button>
             </div>
         </div>
         <div class='employeeBoxes'>
@@ -86,7 +86,7 @@
                 <p>JOB TITLE: {{employee.job_title}}</p>
                 <p>EMAIL: {{employee.email}}</p>
                 <p>SSN: {{employee.ssn}}</p>
-                <button ng-click='rehireEmployee(employee.id)'>Re-Hire Employee</button>
+                <button ng-click='rehireEmployee(employee.ssn)'>Re-Hire Employee</button>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@
 8. Move from new hire to employee
 9. Move from employee to terminated
 10. Move from terminated to new hire
+11. Add a new hire to the new employees array
 
 
 
