@@ -1,0 +1,16 @@
+.allEmployeeContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newEmployeeContainer {
+    /* background: pink; */
+}
+
+.currentEmployeeContainer {
+    /* background: green; */
+}
+
+.terminatedEmployeeContainer {
+    /* background: yellow; */
+}
