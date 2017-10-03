@@ -4,12 +4,28 @@ $scope.makeEmployee = (id) => {
     $scope.newEmployees.map((item, index, arr) => {
         if(id === item.id) {
             $scope.employees.push(item)
-           return arr.splice(index, 1)
+           arr.splice(index, 1)
         }
     })
 }
 
+$scope.terminateEmployee = (id) => {
+    $scope.employees.map((item, index, arr) => {
+        if(id === item.id) {
+            $scope.terminatedEmployees.push(item)
+            arr.splice(index, 1)
+        }
+    })
+}
 
+$scope.rehireEmployee = (id) => {
+    $scope.terminatedEmployees.map((item, index, arr) => {
+        if(id === item.id) {
+            $scope.newEmployees.push(item)
+            arr.splice(index, 1)
+        }
+    })
+}
 
 
 
