@@ -7,7 +7,7 @@ body {
 
 .allStatusFilter {
     margin-bottom: 20px;
-    height: 200px;
+    height: 40px;
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
@@ -21,6 +21,17 @@ input {
     height: 15px;
 }
 
+.addNewHireContainer {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 20px 20px;
+}
+
+span {
+    display: flex;
+    justify-content: space-between;
+}
 
 .allEmployeeContainer {
     display: flex;

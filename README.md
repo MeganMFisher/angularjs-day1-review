@@ -7,6 +7,7 @@
 7. Add All Employee filter
 8. Move from new hire to employee
 9. Move from employee to terminated
+10. Move from terminated to new hire
 
 
 

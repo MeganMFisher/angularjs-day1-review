@@ -27,6 +27,11 @@ $scope.rehireEmployee = (id) => {
     })
 }
 
+$scope.addNewHire = (newHire) => {
+    console.log(newHire) 
+    $scope.newEmployees.push(newHire)
+}
+
 
 
 $scope.terminatedEmployees = [{"id":1,"first_name":"Gay","last_name":"Smees","email":"gsmees0@ed.gov","job_title":"Technical Writer","picture":"https://robohash.org/aspernaturquisin.bmp?size=100x100&set=set1","department":"Human Resources","ssn":"151-41-9431"},

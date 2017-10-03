@@ -17,6 +17,33 @@
         Search Employees of All Statuses: <input ng-model='allStatusFilter'>
     </div>
 
+    <div class='addNewHireContainer'>
+
+        <span> 
+        Firstname: <input ng-model='newHire.first_name'>
+    </span>
+        <span>
+        Lastname: <input ng-model='newHire.last_name'>
+    </span>
+        <span>
+        Email: <input ng-model='newHire.email'>
+    </span>
+        <span>
+        Job Title: <input ng-model='newHire.job_title'>
+    </span>
+        <span>
+        Picture: <input ng-model='newHire.picture'>
+    </span>
+        <span>
+        Department: <input ng-model='newHire.department'>
+    </span>
+        <span>
+        SSN: <input ng-model='newHire.ssn'>
+    </span>
+        <span>
+        <button ng-click="addNewHire(newHire)">Add Employee</button>
+    </div>
+
 
 
     <div class='allEmployeeContainer'>
