@@ -1,6 +1,13 @@
 angular.module('app').controller('mainCtrl', ($scope) => {
    
-
+$scope.makeEmployee = (id) => {
+    $scope.newEmployees.map((item, index, arr) => {
+        if(id === item.id) {
+            $scope.employees.push(item)
+           return arr.splice(index, 1)
+        }
+    })
+}
 
 
 

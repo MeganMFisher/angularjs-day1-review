@@ -5,6 +5,8 @@
 5. Style
 6. Add filter to each employee list
 7. Add All Employee filter
+8. Move from new hire to employee
+9. Move from employee to terminated
 
 
 

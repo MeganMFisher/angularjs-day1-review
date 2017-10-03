@@ -12,12 +12,11 @@
 
 <body ng-controller='mainCtrl'>
 
-    <div class='navbar'>
-        <h3>Employee Database </h3>
-    </div>
+
     <div class='allStatusFilter'>
         Search Employees of All Statuses: <input ng-model='allStatusFilter'>
     </div>
+
 
 
     <div class='allEmployeeContainer'>
@@ -32,7 +31,7 @@
                 <p>JOB TITLE: {{employee.job_title}}</p>
                 <p>EMAIL: {{employee.email}}</p>
                 <p>SSN: {{employee.ssn}}</p>
-                <button>Training Completed</button>
+                <button ng-click='makeEmployee(employee.id)'>Training Completed</button>
             </div>
 
         </div>
