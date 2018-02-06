@@ -1,4 +1,6 @@
-
+.allStatusFilter {
+    margin: 30px 30px;
+}
 
 .allEmployeeContainer {
     display: flex;
