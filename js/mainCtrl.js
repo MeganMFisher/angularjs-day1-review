@@ -1,31 +1,31 @@
 angular.module('app').controller('mainCtrl', ($scope) => {
    
-$scope.makeEmployee = (id) => {
-    $scope.newEmployees.map((item, index, arr) => {
-        if(id === item.ssn) {
-            $scope.employees.push(item)
-           arr.splice(index, 1)
-        }
-    })
-}
+// $scope.makeEmployee = (id) => {
+//     $scope.newEmployees.map((item, index, arr) => {
+//         if(id === item.ssn) {
+//             $scope.employees.push(item)
+//            arr.splice(index, 1)
+//         }
+//     })
+// }
 
-$scope.terminateEmployee = (id) => {
-    $scope.employees.map((item, index, arr) => {
-        if(id === item.ssn) {
-            $scope.terminatedEmployees.push(item)
-            arr.splice(index, 1)
-        }
-    })
-}
+// $scope.terminateEmployee = (id) => {
+//     $scope.employees.map((item, index, arr) => {
+//         if(id === item.ssn) {
+//             $scope.terminatedEmployees.push(item)
+//             arr.splice(index, 1)
+//         }
+//     })
+// }
 
-$scope.rehireEmployee = (id) => {
-    $scope.terminatedEmployees.map((item, index, arr) => {
-        if(id === item.ssn) {
-            $scope.newEmployees.push(item)
-            arr.splice(index, 1)
-        }
-    })
-}
+// $scope.rehireEmployee = (id) => {
+//     $scope.terminatedEmployees.map((item, index, arr) => {
+//         if(id === item.ssn) {
+//             $scope.newEmployees.push(item)
+//             arr.splice(index, 1)
+//         }
+//     })
+// }
 
 $scope.addNewHire = (newHire) => {
     if(newHire) {
